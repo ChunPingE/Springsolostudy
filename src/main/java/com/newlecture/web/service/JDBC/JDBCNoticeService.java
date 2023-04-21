@@ -6,15 +6,20 @@ import java.util.Date;
 
 import javax.sql.*;
 
+import org.springframework.beans.factory.annotation.*;
+import org.springframework.stereotype.*;
+
 import com.newlecture.web.entity.*;
 import com.newlecture.web.service.*;
 
+@Service
 public class JDBCNoticeService implements NoticeService {
 	//private String url = "jdbc:mysql://localhost:3306/dbpractice";
 	//private String uid = "chun";
 	//private String pwd = "1234";
 	//private String driver = "com.mysql.cj.jdbc.Driver";
 	
+	@Autowired
 	private DataSource dataSource;
 	
 	public void setDataSource(DataSource dataSource) {

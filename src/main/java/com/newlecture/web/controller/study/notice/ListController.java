@@ -1,9 +1,10 @@
-package com.newlecture.web.controller.notice;
+package com.newlecture.web.controller.study.notice;
 
 import java.util.*;
 
 import javax.servlet.http.*;
 
+import org.springframework.beans.factory.annotation.*;
 import org.springframework.web.servlet.*;
 import org.springframework.web.servlet.mvc.*;
 
@@ -12,6 +13,7 @@ import com.newlecture.web.service.*;
 
 public class ListController implements Controller {
 
+	@Autowired
 	private NoticeService noticeSerivce;
 
 	public void setNoticeService(NoticeService noticeSerivce) {
