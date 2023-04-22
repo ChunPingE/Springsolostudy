@@ -13,17 +13,17 @@ import com.newlecture.web.service.*;
 @Controller
 @RequestMapping("/customer/notice/")
 public class NoticeController {
-	
+
 	@Autowired
 	private NoticeService noticeService;
-	
+
 	@RequestMapping("list")
-	public String list(Model model) throws Exception{
+	public String list(@RequestParam(name = "p", defaultValue = "1") Integer page)
+			throws Exception {
 		List<Notice> list = noticeService.getList(1, "TITLE", "");
-		model.addAttribute("list", list);
 		return "notice.list";
 	}
-	
+
 	@RequestMapping("detail")
 	public String detail() {
 		return "notice.detail";
