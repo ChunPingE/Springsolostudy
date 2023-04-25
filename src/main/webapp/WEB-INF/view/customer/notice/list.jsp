@@ -43,17 +43,17 @@
 					</tr>
 				</thead>
 				<tbody>
-				<c:forEach items="${list}" var="notice">
 					<tr>
-						<td>${notice.id }</td>
-						<td class="title indent text-align-left"><a href="detail?=${notice.id }">${notice.title }</a></td>
-						<td>${notice.writerId }</td>
+						<td>8</td>
+						<td class="title indent text-align-left"><a href="detail">스프링 8강까지의 예제 코드</a></td>
+						<td>newlec</td>
 						<td>
-							${notice.regDate }	
+							2019-08-18
 						</td>
-						<td>${notice.hit }</td>
+						<td>146</td>
+						<td><input type="checkbox" name="open"></td>
+						<td><input type="checkbox" name="del"></td>
 					</tr>
-				</c:forEach>
 				</tbody>
 			</table>
 		</div>
