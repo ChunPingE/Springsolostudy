@@ -1,4 +1,4 @@
-package com.newlecture.web.service.JPA;
+package com.newlecture.web.service.jpa;
 
 public class JPANoticeService {
 

@@ -4,9 +4,9 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+<head>    
     <meta charset="UTF-8">
-    <title><tiles:getAsString name="title"/></title>
+    <title><tiles:getAsString name="title" /></title>
     
     <link href="/css/customer/layout.css" type="text/css" rel="stylesheet" />
     <style>
@@ -23,26 +23,35 @@
 
 <body>
     <!-- header 부분 -->
-	<tiles:insertAttribute name="header"/>
+	<tiles:insertAttribute name="header" />
+
 	<!-- --------------------------- <visual> --------------------------------------- -->
 	<!-- visual 부분 -->
-	<tiles:insertAttribute name="visual"/>
+	<tiles:insertAttribute name="visual" />
+	
 	<!-- --------------------------- <body> --------------------------------------- -->
 	<div id="body">
 		<div class="content-container clearfix">
 
 			<!-- --------------------------- aside --------------------------------------- -->
 			<!-- aside 부분 -->
-			<tiles:insertAttribute name="aside"/>
+			<tiles:insertAttribute name="aside" />
+
 			
 			<!-- --------------------------- main --------------------------------------- -->
-			<tiles:insertAttribute name="body"/>
-	
+
+
+			<tiles:insertAttribute name="body" />
+		
+		
+			
 		</div>
 	</div>
 
     <!-- ------------------- <footer> --------------------------------------- -->
-	<tiles:insertAttribute name="footer"/>
+	<tiles:insertAttribute name="footer" />
+
+
     </body>
     
     </html>
