@@ -34,15 +34,13 @@
 			<!-- --------------------------- aside --------------------------------------- -->
 			<!-- aside 부분 -->
 			<tiles:insertAttribute name="aside"/>
-			
+
 			<!-- --------------------------- main --------------------------------------- -->
 			<tiles:insertAttribute name="body"/>
-	
 		</div>
 	</div>
 
     <!-- ------------------- <footer> --------------------------------------- -->
 	<tiles:insertAttribute name="footer"/>
-    </body>
-    
-    </html>
+	</body>
+</html>

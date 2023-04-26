@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
  <!-- content 부분 -->
 
     <div id="visual" class="">
@@ -20,8 +19,6 @@
                 </li>
 
             </ul>
-
-
 
             <ul class="banner-button-list" style="color:#ffff00; font-size:20px;position:absolute; left:10px; bottom:5px; z-index: 100px; display: flex; flex-direction: row;">
                 <li></li>
@@ -288,6 +285,3 @@
     <script>
 
     </script>
-
-
-    
